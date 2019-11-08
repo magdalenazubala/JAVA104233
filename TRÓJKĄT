@@ -1,0 +1,65 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Trojkat {
+  public static void main(String[] args) {
+        Scanner scan = new Scanner (System.in);
+        System.out.println("Podaj boki trojkata");
+        double A = scan.nextDouble();
+        double B = scan.nextDouble();
+        double C = scan.nextDouble();
+    
+        if(A<B+C||B<A+C||C<A+B){
+			System.out.println("To jest trojkat");
+    }
+    else
+      System.out.Println("To nie jest trojkat");
+
+      //Pole trojkata
+      double pole;
+      double p;
+      p = 0.5*(A+B+C);
+	    double wzorHerona = p*(p-A)*(p-B)*(p-C);
+	    pole = Math.sqrt(wzorHerona);
+      System.out.println("Pole trójkąta jest rowne = " + pole);
+
+      //Czy trojkat jest prostokatny
+
+      if(Math.pow(A,2) + Math.pow(B,2) == Math.pow(C,2)||Math.pow(B,2) + Math.pow(C,2) == Math.pow(A,2)|| Math.pow(A,2) + Math.pow(C,2) == Math.pow(bokB,2)){
+				System.out.println("To jest trojkat prostokatny");
+			}
+			else
+				System.out.println("To nie jest trojkat prostokatny");
+
+      //Czy trojkat jest rozwartokatny
+      if(Math.pow(A,2) + Math.pow(B,2) < Math.pow(C,2)||Math.pow(B,2) + Math.pow(C,2) < Math.pow(A,2)|| Math.pow(A,2) + Math.pow(C,2) < Math.pow(bokB,2)){
+				System.out.println("To jest trojkat prostokatny");
+			}
+			else
+				System.out.println("To nie jest trojkat prostokatny");
+
+        //Sortowanie
+        double[] tablica = {A, B, C};
+        System.out.println("Tablica przed sortowaniem "+ Arrays.ToString(tablica));
+        double mini;
+        double tmp;
+        for(double i= 0; i<tablica.lenght; i++){
+          for(double j-i; j<tablica.length; j++){
+            if tablica[j] <tablica[mini]{
+              mini = j;
+            }
+            
+          }
+          tmp = tab[i];
+          tablica[i]=tablica[mini];
+          tablica[mini]=tmp;       
+          }
+        System.out.println("Posortowana tablica: " + Arrays.toString(tablica));
+    }
+    }
+    
+
+
+
+
+
