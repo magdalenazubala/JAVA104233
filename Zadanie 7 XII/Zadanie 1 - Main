@@ -1,0 +1,33 @@
+public class pudelko<T> {
+	
+	public T elem;
+	private final T[] tabel;
+
+	public wybor(Collection<T> wybory) {
+    	tabel = wybory.toArray();
+    }
+
+	public pudelko(T elem) {
+		this.elem = elem;
+	}
+
+	public T getelem() {
+		return elem;
+	}
+}
+
+public class Main {
+
+	public void contains();
+
+	public static void main(String[] args) {
+		String[] array = { "element", "item" };
+		String element1 = "element";
+		String element2 = "element2";
+
+		Main main = new Main();
+		System.out.println(main.contains(array, element1));
+		System.out.println(main.contains(array, element2));
+
+	}
+}
