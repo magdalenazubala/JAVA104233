@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class StrEnd {
+
+	public static void main(String[] args) {
+		String tekst;
+
+		Scanner wynik = new Scanner(System.in);
+		System.out.println("Wpisz ciag znakow, ktory konczy sie literami 'end'");
+		do {
+			tekst = wynik.nextLine();
+			System.out.println("Cos poszlo nie tak. Sprobuj jeszcze raz!");
+		} while (!tekst.endsWith("end"));
+
+		System.out.println("A jednak! Wprowadziles poprawny tekst. Gratulacje!");
+	}
+}
