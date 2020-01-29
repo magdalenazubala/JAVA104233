@@ -1,0 +1,46 @@
+public class Figure implements NumberOfSidesPrintable {
+
+	// cialo klasy
+
+	private int bokA;
+	private int bokB;
+	private int bokC;
+	private int bokD;
+	private int katA;
+	private int katB;
+	private int katC;
+	private int katD;
+
+	public void setbokA(int bokA) {
+		this.bokA = bokA;
+	}
+
+	public void setbokB(int bokB) {
+		this.bokB = bokB;
+	}
+
+	public void setbokC(int bokC) {
+		this.bokC = bokC;
+	}
+
+	public void setbokD(int bokD) {
+		this.bokD = bokD;
+	}
+
+	public void setkatA(int katA) {
+		this.katA = katA;
+	}
+
+	public void setkatB(int katkB) {
+		this.katB = katB;
+	}
+
+	public void setkatC(int katC) {
+		this.katC = katC;
+	}
+
+	public void katbokD(int katD) {
+		this.katD = katD;
+	}
+
+}
