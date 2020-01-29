@@ -1,0 +1,55 @@
+
+public class ZadanieCar {
+	public static void main(String[] args) {
+
+		public abstract class Samochod {
+
+			private int dlugosc;
+			private int szerokosc;
+			private int wysokosc;
+
+			public abstract void jedz();
+
+			public abstract void stoj();
+
+			public void setDlugosc(int dlugosc) {
+				this.dlugosc = dlugosc;
+			}
+
+			public void setSzerokosc(int szerokosc) {
+				this.szerokosc = szerokosc;
+			}
+
+			public void setWysokosc(int wysokosc) {
+				this.wysokosc = wysokosc;
+			}
+
+		}
+
+		public class Mercedes extends Samochod {
+			private int rocznik;
+			private String hamulcePrzod;
+			private String hamulceTyl;
+
+			public void setRocznik(int rocznik) {
+				this.rocznik = rocznik;
+			}
+
+			public void setHamulcePrzod(String HamulcePrzod) {
+				this.HamulcePrzod = HamulcePrzod;
+			}
+
+			public void sethamulceTyl(String hamulceTyl) {
+				this.hamulceTyl = hamulceTyl;
+			}
+
+		}
+
+		Samochod CITAN = new Samochod();
+		CITAN.szerokosc = 5222232;
+		CITAN.wysokosc = 2530;
+		CITAN.rocznik = 1956;
+		CITAN.HamulcePrzod = "tarczowe wentylowane";
+		CITAN.hamulceTyl = "tarczowe";
+	}
+}
