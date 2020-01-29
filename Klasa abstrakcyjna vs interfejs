@@ -1,0 +1,9 @@
+Interfejsy vs klasy abstrakcyjne:
+- implementację metod abstrakcyjnych mają dostarczyć klasy dziedziczące
+- słowo kluczowe abstract pozwala na tworzenie jednej lub wielu metod niezdefiniowanych - ustanowienie interfejsu bez udostępniania 
+  odpowiadającej mu implementacji
+- słowo kluczowe interface generuje zupełnie abstrakcyjna klasę bazową, która jest całkowicie pozbawiona implementacji 
+- klasa typu interface pozwala nam ustanowi¢ nazwy metod, listy argumentów, typy zwracane - jednak bez ciała metod
+- kod używający danego interfejsu wie, jakie metody mogą być wywoływane dla danego interfejsu i to wszystko
+
+
