@@ -1,0 +1,19 @@
+class Zadanie {
+
+	public class Square extends Figure implements Resetable {
+		private int bokA;
+		private int bokB;
+		private int bokC;
+		private int bokD;
+	}
+
+	public static void main(String[] args) {
+
+		// podaj przyklad zastosowania
+
+		Square figura = new Square();
+		figura.resetAllAttributes();
+		figura.printSidesNumber();
+
+	}
+}
