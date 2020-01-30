@@ -1,0 +1,23 @@
+
+public class JoinPractice {
+
+	for(
+	int a = 0;a<10;a++){
+		 Thread thread[a] = new Thread[a](() -> {
+		        for (int b = 1; b <= 20; b++) {
+		            System.out.println(b);
+		        }
+		    };
+     }
+
+	public static void main(String[] args){
+		try {
+			for (int i; i<10;i++) {
+			t[a].join();
+			
+		}
+	    } catch (InterruptedException j) {
+	    	j.printStackTrace();
+	    }
+}
+}
