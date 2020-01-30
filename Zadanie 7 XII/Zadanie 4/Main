@@ -1,0 +1,31 @@
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		People osoba1 = new People(1, "Jan", "Jankowy");
+		People osoba2 = new People(2, "Adam", "Adamowy");
+		People osoba3 = new People(3, "Karol", "Karolowy");
+
+		List<People> peopleList = new ArrayList<>();
+		peopleList.add(osoba1);
+		peopleList.add(osoba2);
+		peopleList.add(osoba3);
+
+		for (People temp : peopleList) {
+			System.out.println(temp.PrintInfo());
+		}
+
+		peopleList.sort(Comparator.comparingInt(a -> a.wiek));
+		Collections.reverse(peopleList);
+		for (People temp : peopleList) {
+			System.out.println(temp.PrintInfo());
+		}
+
+		peopleList.sort(Comparator.comparing(a -> a.nazwisko));
+		Collections.reverse(peopleList);
+		for (People temp : peopleList) {
+			System.out.println(temp.PrintInfo());
+		}
+	}
+}
