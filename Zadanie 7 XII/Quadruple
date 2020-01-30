@@ -1,0 +1,54 @@
+
+import java.util.Scanner;
+
+public class Quadruple<Jeden, Dwa, Trzy, Cztery> {
+    private Jeden jeden;
+    private Dwa dwa;
+    private Trzy trzy;
+    private Cztery cztery;
+
+    protected Quadruple(Jeden jeden, Dwa dwa, Trzy trzy, Cztery cztery){
+        this.jeden=jeden;
+        this.dwa=dwa;
+        this.trzy=trzy;
+        this.cztery=cztery;
+    }
+    public Quadruple lista(){
+        System.out.println("Pierwsza osoba:"+jeden);
+        System.out.println("Druga osoba:"+dwa);
+        System.out.println("Trzecia osoba:"+trzy);
+        System.out.println("Czwarta osoba:"+cztery);
+
+        Quadruple quadruple = new Quadruple(jeden,dwa,trzy,cztery);
+
+        return quadruple;
+    }
+
+    public static void main(String[] args) {
+
+        Quadruple<String,String,String,String> quadrupleInstance = new Quadruple
+                <String, String, String,String>
+                ("Jan","Janina","Janusz","Janek");
+        Scanner scanner = new Scanner(System.in);
+        String a = scanner.nextLine();
+        String c = scanner.nextLine();
+
+        quadrupleInstance.UzytkownikA(a);
+        quadrupleInstance.UzytkownikC(c);
+        quadrupleInstance.lista();
+    }
+
+    public void UzytkownikA(As as){
+        this.jeden=jeden;
+    }
+    public void UzytkownikB(Bs bs){
+        this.dwa=dwa;
+    }
+    public void UzytkownikC(Cs cs){
+        this.trzy=trzy;
+    }
+Ds void UzytkownikD(Delta ds){
+        this.cztery=cztery;
+    }
+
+}
