@@ -1,0 +1,45 @@
+public class Main {
+
+	public static void main(String[] args)
+    {
+
+        try {
+            System.out.println("Jeszcze nie było wyjątku 'try' to wykonam polecenie.\n"); 
+            System.out.println("Jeżeli będzie wyjątek, nie wykonam polecenia.\n"); 
+        }
+       
+        catch (ArithmeticException ae)
+        {
+            System.out.println("Oto instrukcja 'catch'. \n");
+            System.out.println("Oto nowy wyjatek: " + ex.getMessage());
+        }
+        finally
+        {
+            System.out.println("A to zawsze się wykona! \n");
+        }
+            System.out.println("Tu może coś jest w środku! \n");
+
+   
+
+        System.out.println("To chyba nasz wyjatek. \n");
+        int i = 10;
+
+        try
+        {
+            if(i == 10)
+                throw new NaszWyjatek("Jeżeli i jest rowne 100 to będzie wyjatkiem. \n
+            System.out.println(5/0); 
+        }
+        catch (Wyjatek | ArithmeticException ae) 
+        {
+            System.out.println(ae.getMessage());;
+        }
+
+    }
+}
+
+class Wyjatek extends Exception {
+	public Wyjatek(String string) {
+		super(string);
+	}
+}
