@@ -1,0 +1,16 @@
+public class People {
+	public String imie;
+	public String nazwisko;
+	public int wiek;
+
+	public People(String imie, String nazwisko, int wiek) {
+		this.imie = imie;
+		this.nazwisko = nazwisko;
+
+		this.wiek = wiek;
+	}
+
+	public String PrintInfo() {
+		return "Imie: " + imie + " nazwisko: " + nazwisko + " wiek: " + wiek;
+	}
+}
