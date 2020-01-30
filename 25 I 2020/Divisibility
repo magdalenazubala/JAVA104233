@@ -1,0 +1,37 @@
+
+class Divisibility extends Thread {
+
+	public void function() {
+
+		for (int a = 0; a <= 100; a++) {
+			if (a % 3 == 0) {
+				System.out.println(a);
+			}
+		}
+		for (int a = 101; a <= 200; a++) {
+			if (a % 3 == 0) {
+				System.out.println(a);
+			}
+		}
+		for (int a = 201; a <= 300; a++) {
+			if (a % 3 == 0) {
+				System.out.println(a);
+			}
+		}
+		for (int a = 301; a <= 400; a++) {
+			if (a % 3 == 0) {
+				System.out.println(a);
+			}
+		}
+		for (int a = 401; a <= 500; a++) {
+			if (a % 3 == 0) {
+				System.out.println(a);
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		Divisibility b = new Divisibility();
+		b.function();
+	}
+}
